@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "name": "Nethravathi General Store",
+    "category": "General Store",
+    "image": "../../images/explorica/retail_shops/nethravathi_stores.jpg",
+    "rating": 4.5,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "phone": "+91 9481667035",
+    "description": "Your one-stop shop for daily essentials. We provide high-quality grains, oils, and household needs.",
+    "address": "Main Road, Shravanabelagola",
+    "mapUrl": "http://maps.google.com/?q=Nethravathi+General+Store+Shravanabelagola",
+    "products": [
+      { "name": "Organic Rice (1kg)", "price": "₹60" },
+      { "name": "Sugar (1kg)", "price": "₹45" },
+      { "name": "Sunflower Oil (1L)", "price": "₹135" },
+      { "name": "Mixed Spices Pack", "price": "₹80" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Sri Veerabhadreshwara Traders",
+    "category": "Wholesale & Retail",
+    "image": "../../images/explorica/retail_shops/sri_veerabhadreshwara_traders.jpg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "phone": "+91 8746855415",
+    "description": "Essentials, elevated. A curated selection of home goods, pantry staples, and lifestyle products designed for modern living.",
+    "address": "B M Road, Shravanabelagola",
+    "mapUrl": "http://maps.google.com/?q=Sri+Veerabhadreshwara+Traders+Shravanabelagola",
+    "products": [
+      { "name": "Local Spices Pack", "price": "₹120" },
+      { "name": "Dry Fruits Mix (200g)", "price": "₹250" },
+      { "name": "Jaggery Cubes (1kg)", "price": "₹65" },
+      { "name": "Filter Coffee Powder (250g)", "price": "₹180" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sanjay Provision Store",
+    "category": "Provision Store",
+    "image": "../../images/explorica/retail_shops/sanjay_provision_store.jpg",
+    "rating": 4.2,
+    "openTime": "10:00",
+    "closeTime": "21:30",
+    "phone": "+91 9741979610",
+    "description": "Quality first, always. We stock the best brands and daily necessities in a streamlined, hassle-free shopping environment.",
+    "address": "B M Road, Shravanabelagola",
+    "mapUrl": "http://maps.google.com/?q=Sanjay+Provision+Store+Shravanabelagola",
+    "products": [
+      { "name": "Toor Dal (1kg)", "price": "₹145" },
+      { "name": "Masala Powder Combo", "price": "₹55" },
+      { "name": "Assorted Snacks", "price": "₹30" },
+      { "name": "Dishwash Bar (Pack of 3)", "price": "₹45" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Padmavathi Stores",
+    "category": "General Store",
+    "image": "../../images/explorica/retail_shops/padmavathi_stores.jpg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "description": "Simply better shopping. Find exactly what you need without the clutter—just high-quality products at fair prices.",
+    "address": "B M Road, Shravanabelagola",
+    "phone": "+91 9900995560",
+    "mapUrl": "http://maps.google.com/?q=Padmavathi+Stores+Shravanabelagola",
+    "products": [
+      { "name": "Wheat Flour / Atta (5kg)", "price": "₹220" },
+      { "name": "Ragi Flour (1kg)", "price": "₹55" },
+      { "name": "Cooking Oil (1L)", "price": "₹130" },
+      { "name": "Tea Powder (250g)", "price": "₹110" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sri Ranganatha General Stores",
+    "category": "General Store",
+    "image": "../../images/explorica/retail_shops/sri_ranganatha_general_stores.jpg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "description": "Big brands, small prices. Your go-to destination for unbeatable deals on groceries, household items, and seasonal favorites.",
+    "address": "Near Bus Stand, Shravanabelagola",
+    "phone": "+91 9731671672",
+    "mapUrl": "http://maps.google.com/?q=Sri+Ranganatha+General+Stores+Shravanabelagola",
+    "products": [
+      { "name": "Sunflower Oil (1L)", "price": "₹135" },
+      { "name": "Glucose Biscuits", "price": "₹10" },
+      { "name": "Soft Drink (750ml)", "price": "₹40" },
+      { "name": "School Stationery Kit", "price": "₹85" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Balaji Bhandar",
+    "category": "Discount Store",
+    "image": "../../images/explorica/retail_shops/balaji_bhandar.jpg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "description": "Smart shopping starts here. We believe quality shouldn't cost a fortune, which is why we offer the best value on the items you use every day.",
+    "address": "Maruthi Circle, Shravanabelagola",
+    "phone": "+91 9483882133",
+    "mapUrl": "http://maps.google.com/?q=Balaji+Bhandar+Shravanabelagola",
+    "products": [
+      { "name": "Sugar (1kg)", "price": "₹45" },
+      { "name": "Crystal Salt (1kg)", "price": "₹20" },
+      { "name": "Bathing Soap", "price": "₹35" },
+      { "name": "Detergent Powder (500g)", "price": "₹60" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sri Durga Stores",
+    "category": "Discount Store",
+    "image": "../../images/explorica/retail_shops/durga.jpg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "description": "Stretch your dollar further. From pantry fillers to cleaning supplies, get more for less every time you visit.",
+    "address": "Sreekantanagara, Shravanabelagola",
+    "phone": "+91 9481986935",
+    "mapUrl": "https://maps.app.goo.gl/PtSGXSv4cJTYQqq56",
+    "products": [
+      { "name": "Tea Powder (250g)", "price": "₹110" },
+      { "name": "Instant Noodles Pack", "price": "₹14" },
+      { "name": "Milk Biscuit Pack", "price": "₹10" },
+      { "name": "Shampoo Sachet (Strip)", "price": "₹40" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sri Ram Stores",
+    "category": "Discount Store",
+    "image": "../../images/explorica/retail_shops/sri_ram_stores.jpeg",
+    "rating": 4.8,
+    "openTime": "08:00",
+    "closeTime": "20:00",
+    "description": "Big brands, small prices. Your go-to destination for unbeatable deals on groceries, household items, and seasonal favorites.",
+    "address": "Madeena Complex, Shravanabelagola",
+    "phone": "+91 9972281484",
+    "mapUrl": "https://maps.app.goo.gl/dL7gq1E96zdCj5z86",
+    "products": [
+      { "name": "Salt Packet (1kg)", "price": "₹20" },
+      { "name": "Turmeric Powder (100g)", "price": "₹35" },
+      { "name": "Mustard Seeds (100g)", "price": "₹20" },
+      { "name": "Matchbox Bundle", "price": "₹15" }
+    ]
+  }
+]

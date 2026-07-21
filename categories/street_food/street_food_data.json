@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sf1",
+    "name": "Gomata Chaat Corner",
+    "speciality": "Chaats & Pani Puri",
+    "image": "../../images/street_food/chaat.jpg",
+    "location": "Near Bus Stand Circle",
+    "phone": "+919876543210",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Shravanabelagola+Bus+Stand",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "4:00 PM - 9:30 PM",
+    "description": "The town's most-loved evening chaat stall. Famous for crispy pani puri, masala puri and sev puri made fresh to order. A must-visit after temple darshan."
+  },
+  {
+    "id": "sf2",
+    "name": "Vindhyagiri Dosa Point",
+    "speciality": "Dosa & Breakfast",
+    "image": "../../images/street_food/dosa.jpg",
+    "location": "Foot of Vindhyagiri Hill",
+    "phone": "+919988776655",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Vindhyagiri+Hill+Shravanabelagola",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "6:30 AM - 11:00 AM",
+    "description": "Start your day with hot, crispy masala dosa and filter coffee right where the hill climb begins. Simple, hygienic and quick — perfect for early pilgrims."
+  },
+  {
+    "id": "sf3",
+    "name": "Bahubali Gobi Manchurian",
+    "speciality": "Gobi & Snacks",
+    "image": "../../images/street_food/gobi.jpg",
+    "location": "Market Road",
+    "phone": "+919123456789",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Market+Road+Shravanabelagola",
+    "status": "Busy",
+    "statusColor": "#e67e22",
+    "timings": "5:00 PM - 10:00 PM",
+    "description": "Sizzling gobi manchurian, fried rice and noodles from a lively roadside stall. Generous portions and pocket-friendly prices make it a favourite with students."
+  },
+  {
+    "id": "sf4",
+    "name": "Namma Juice & Mirchi",
+    "speciality": "Juices & Bajji",
+    "image": "../../images/street_food/juice.jpg",
+    "location": "Opp. Kalyani Pond",
+    "phone": "+919481667035",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Kalyani+Pond+Shravanabelagola",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "10:00 AM - 8:00 PM",
+    "description": "Fresh fruit juices, tender coconut and hot mirchi bajji to beat the afternoon heat. A refreshing stop near the pond after exploring the town."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "tr1",
+    "name": "KSRTC Bus Stand",
+    "type": "Government Bus Service",
+    "image": "../../images/transport/ksrtc.jpg",
+    "location": "Main Bus Stand, Town Centre",
+    "phone": "+919876543210",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=KSRTC+Bus+Stand+Shravanabelagola",
+    "status": "Running",
+    "statusColor": "#27ae60",
+    "timings": "5:30 AM - 10:00 PM",
+    "route": "Hassan · Channarayapatna · Bengaluru · Mysuru",
+    "description": "The main KSRTC bus stand with regular services to Hassan, Channarayapatna, Bengaluru and Mysuru. Enquire at the counter for the latest timings and platform numbers."
+  },
+  {
+    "id": "tr2",
+    "name": "Town Auto Rickshaw Stand",
+    "type": "Auto Stand",
+    "image": "../../images/transport/auto.jpg",
+    "location": "Opp. Bus Stand",
+    "phone": "+919988776655",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Auto+Stand+Shravanabelagola",
+    "status": "Available",
+    "statusColor": "#27ae60",
+    "timings": "6:00 AM - 9:00 PM",
+    "route": "Within town · Hill base · Nearby villages",
+    "description": "Shared and private auto rickshaws for local trips within the town, to the hill base and to nearby villages. Agree on the fare before you start your ride."
+  },
+  {
+    "id": "tr3",
+    "name": "Bahubali Taxi & Cabs",
+    "type": "Taxi / Cab Service",
+    "image": "../../images/transport/taxi.jpg",
+    "location": "B M Road",
+    "phone": "+919123456789",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=B+M+Road+Shravanabelagola",
+    "status": "On Call",
+    "statusColor": "#2980b9",
+    "timings": "24 x 7 on booking",
+    "route": "Outstation · Airport · Temple tours",
+    "description": "Sedans and SUVs on hire for outstation trips, airport transfers and full-day temple tours. Book in advance on call or WhatsApp for the best rates."
+  },
+  {
+    "id": "tr4",
+    "name": "Shravana Two-Wheeler Rentals",
+    "type": "Bike & Scooter Rental",
+    "image": "../../images/transport/rental.jpg",
+    "location": "Near Kalyani Circle",
+    "phone": "+919481667035",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Kalyani+Circle+Shravanabelagola",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "8:00 AM - 7:00 PM",
+    "route": "Self-drive · Hourly & daily",
+    "description": "Rent scooters and bikes by the hour or day to explore the town and surroundings at your own pace. Valid ID required; helmets provided."
+  }
+]

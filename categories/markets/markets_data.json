@@ -1,0 +1,54 @@
+[
+  {
+    "id": "mkt1",
+    "name": "Main Vegetable Market",
+    "type": "Vegetable & Fruit Market",
+    "image": "../../images/markets/vegetable.jpg",
+    "location": "Market Road, Town Centre",
+    "phone": "+919876543210",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Market+Road+Shravanabelagola",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "6:00 AM - 8:00 PM",
+    "description": "The town's main daily market for fresh vegetables, fruits and greens sourced from nearby farms. Best prices are early in the morning."
+  },
+  {
+    "id": "mkt2",
+    "name": "Weekly Santhe (Market Day)",
+    "type": "Weekly Farmers' Market",
+    "image": "../../images/markets/santhe.jpg",
+    "location": "Santhe Maidan, near Bus Stand",
+    "phone": "+919988776655",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Shravanabelagola+Santhe",
+    "status": "Every Week",
+    "statusColor": "#e67e22",
+    "timings": "Weekly · Morning to Evening",
+    "description": "The lively weekly santhe where farmers and traders from surrounding villages gather to sell produce, grains, utensils and household goods. A great glimpse of local life."
+  },
+  {
+    "id": "mkt3",
+    "name": "Flower & Pooja Market",
+    "type": "Flower Market",
+    "image": "../../images/markets/flowers.jpg",
+    "location": "Near Temple Entrance",
+    "phone": "+919123456789",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Temple+Entrance+Shravanabelagola",
+    "status": "Open Now",
+    "statusColor": "#27ae60",
+    "timings": "5:30 AM - 9:00 PM",
+    "description": "Fresh flowers, garlands and pooja items right beside the temple entrance. Vendors here supply jasmine, marigold and lotus for daily worship and festivals."
+  },
+  {
+    "id": "mkt4",
+    "name": "Fish & Meat Market",
+    "type": "Fish & Meat",
+    "image": "../../images/markets/meat.jpg",
+    "location": "Old Town, East Lane",
+    "phone": "+919481667035",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=Old+Town+Shravanabelagola",
+    "status": "Morning Only",
+    "statusColor": "#c0392b",
+    "timings": "6:00 AM - 12:00 PM",
+    "description": "Fresh fish, chicken and mutton from local suppliers. Open mainly in the mornings — arrive early for the best and freshest stock."
+  }
+]

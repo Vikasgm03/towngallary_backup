@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Your Place | Vihara</title>
+  <meta name="description" content="List your shop, service, eatery or stay on Vihara for free. Send your details on WhatsApp and we'll verify and add you to the Shravanabelagola town guide.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* ---------- VARIABLES ---------- */
+    :root {
+      --primary: #ff8c00;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #1da851;
+      --text-dark: #2c3e50;
+      --bg-body: #f8f9fa;
+      --white: #ffffff;
+      --border: #e6e6e6;
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: rgba(255, 255, 255, 0.98);
+      padding: 1rem 5%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--primary);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    .close-btn {
+      text-decoration: none;
+      color: #666;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+    .close-btn:hover { color: var(--primary); transform: rotate(90deg); }
+
+    /* ---------- MAIN CONTENT ---------- */
+    .container {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      width: 100%;
+      flex: 1;
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #ff8c00, #ffb347);
+      color: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
+    }
+
+    .info-box h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      font-size: 0.9rem;
+      opacity: 0.95;
+    }
+
+    /* ---------- STEPS ---------- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 1.5rem;
+    }
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 0.75rem;
+      text-align: center;
+    }
+    .step .num {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: #fff3e0; color: var(--primary);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 600; margin: 0 auto 8px;
+    }
+    .step h4 { font-size: 0.85rem; margin-bottom: 4px; }
+    .step p { font-size: 0.72rem; color: #888; }
+
+    /* ---------- FORM ---------- */
+    .form-wrapper {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+      border: 1px solid #eee;
+      padding: 1.75rem;
+    }
+
+    .form-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .form-sub { font-size: 0.85rem; color: #888; margin-bottom: 1.5rem; }
+
+    .field { margin-bottom: 1.1rem; }
+    .field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .field label .req { color: #e53935; }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: 'Poppins', sans-serif;
+      outline: none;
+      background: #fafafa;
+      color: var(--text-dark);
+      transition: 0.2s;
+    }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
+    }
+    .field textarea { resize: vertical; min-height: 80px; }
+
+    .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* Photo note */
+    .photo-note {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #e8f9ef;
+      border: 1px dashed var(--whatsapp);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 0.5rem 0 1.5rem;
+    }
+    .photo-note i { color: var(--whatsapp-dark); font-size: 1.3rem; margin-top: 2px; }
+    .photo-note p { font-size: 0.82rem; color: #2c6b4a; line-height: 1.5; }
+
+    /* Submit */
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: white;
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 6px 18px rgba(37,211,102,0.35);
+      transition: 0.2s;
+    }
+    .btn-whatsapp:hover { background: var(--whatsapp-dark); transform: translateY(-2px); }
+
+    .form-error {
+      color: #e53935;
+      font-size: 0.82rem;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .privacy-line {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #999;
+      font-size: 0.8rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 560px) {
+      .steps { grid-template-columns: 1fr; }
+      .row-2 { grid-template-columns: 1fr; }
+      .form-wrapper { padding: 1.25rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="brand">
+      <i class="fas fa-plus-circle"></i> Add Your Place
+    </a>
+    <a href="index.html" class="close-btn" onclick="if(history.length>1){history.back();return false;}"><i class="fas fa-times"></i></a>
+  </header>
+
+  <div class="container">
+
+    <div class="info-box">
+      <h2>Put your business on the town map</h2>
+      <p>Listing on <strong>Vihara</strong> is completely free. Fill in a few details, send them on WhatsApp with your photos, and we'll verify and add you to the Shravanabelagola guide.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h4>Fill details</h4>
+        <p>Tell us about your place</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h4>Send on WhatsApp</h4>
+        <p>Attach 2–3 photos in chat</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h4>We verify & list</h4>
+        <p>Live within 24–48 hrs</p>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <div class="form-title">Your place details</div>
+      <div class="form-sub">Fields marked <span style="color:#e53935">*</span> are required.</div>
+
+      <div class="form-error" id="formError"><i class="fas fa-circle-exclamation"></i> Please fill in the required fields.</div>
+
+      <div class="field">
+        <label for="placeName">Shop / Place name <span class="req">*</span></label>
+        <input type="text" id="placeName" placeholder="e.g. Sri Ganapathi Bakery">
+      </div>
+
+      <div class="field">
+        <label for="category">Category <span class="req">*</span></label>
+        <select id="category">
+          <option value="">Select a category…</option>
+          <option>Temple / Heritage</option>
+          <option>Street Food</option>
+          <option>Food & Dining</option>
+          <option>Bakery</option>
+          <option>Market / Vendor</option>
+          <option>Retail Shop</option>
+          <option>Transport (Bus / Auto / Cab)</option>
+          <option>Stay / Lodge</option>
+          <option>Healthcare</option>
+          <option>Service (Plumber, Electrician, etc.)</option>
+          <option>Education</option>
+          <option>Fitness</option>
+          <option>Travels / Tours</option>
+          <option>Bar / Lounge</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label for="ownerName">Owner name</label>
+          <input type="text" id="ownerName" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="phone">Contact / WhatsApp number <span class="req">*</span></label>
+          <input type="tel" id="phone" placeholder="e.g. 98765 43210">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="area">Area / Location <span class="req">*</span></label>
+        <input type="text" id="area" placeholder="e.g. B M Road, near Bus Stand">
+      </div>
+
+      <div class="field">
+        <label for="mapLink">Google Maps link <span style="color:#aaa">(optional)</span></label>
+        <input type="text" id="mapLink" placeholder="Paste your Google Maps location link">
+      </div>
+
+      <div class="field">
+        <label for="about">Short description <span style="color:#aaa">(optional)</span></label>
+        <textarea id="about" placeholder="What do you offer? Timings, speciality, etc."></textarea>
+      </div>
+
+      <div class="photo-note">
+        <i class="fas fa-camera-retro"></i>
+        <p><strong>Photos:</strong> After you tap the button below, WhatsApp opens with your details ready. Just <strong>attach 2–3 clear photos</strong> of your shop/place in the chat and press send — that's how your listing gets its picture.</p>
+      </div>
+
+      <button type="button" class="btn-whatsapp" onclick="sendToWhatsApp()">
+        <i class="fab fa-whatsapp"></i> Send details on WhatsApp
+      </button>
+
+      <p class="privacy-line">We only use these details to verify and create your free listing.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Vihara · Namma Shravanabelagola</p>
+  </footer>
+
+  <script>
+    /* =========================================================
+       ADMIN WHATSAPP NUMBER
+       Replace the number below with YOUR WhatsApp number.
+       Format: country code + number, no +, spaces or dashes.
+       Example for India: 919483882133
+    ========================================================= */
+    const ADMIN_WHATSAPP = "919483882133";
+
+    function sendToWhatsApp() {
+      const name   = document.getElementById('placeName').value.trim();
+      const cat    = document.getElementById('category').value.trim();
+      const owner  = document.getElementById('ownerName').value.trim();
+      const phone  = document.getElementById('phone').value.trim();
+      const area   = document.getElementById('area').value.trim();
+      const map    = document.getElementById('mapLink').value.trim();
+      const about  = document.getElementById('about').value.trim();
+
+      // Required-field validation
+      if (!name || !cat || !phone || !area) {
+        document.getElementById('formError').style.display = 'block';
+        return;
+      }
+      document.getElementById('formError').style.display = 'none';
+
+      // Build a clean, structured message
+      let msg = "🏙️ *New Listing Request — Vihara*\n\n";
+      msg += "📍 *Place:* " + name + "\n";
+      msg += "🏷️ *Category:* " + cat + "\n";
+      if (owner) msg += "👤 *Owner:* " + owner + "\n";
+      msg += "📞 *Contact:* " + phone + "\n";
+      msg += "🗺️ *Area:* " + area + "\n";
+      if (map)   msg += "🔗 *Map:* " + map + "\n";
+      if (about) msg += "📝 *About:* " + about + "\n";
+      msg += "\n📸 I'm attaching photos of my place in this chat.";
+
+      const url = "https://wa.me/" + ADMIN_WHATSAPP + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>

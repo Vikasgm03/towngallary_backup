@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>About Us | Vihara</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===== VARIABLES & RESET ===== */
+:root {
+  --primary: #FF9933; /* Saffron */
+  --primary-light: #fff3e0;
+  --text-dark: #2c3e50;
+  --text-grey: #666;
+  --bg-light: #f9f9f9;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  background: rgba(255,255,255,0.98); backdrop-filter: blur(10px);
+  padding: 0.8rem 5%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); font-weight: 700; text-decoration: none; }
+.back-home { color: var(--text-dark); text-decoration: none; font-weight: 500; }
+
+/* ===== HERO SECTION ===== */
+.about-hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  background: white;
+}
+
+.pill {
+  display: inline-block; background: var(--primary-light); color: var(--primary);
+  padding: 6px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 1rem; color: var(--text-dark);
+}
+
+.about-hero p {
+  max-width: 600px; margin: 0 auto; color: var(--text-grey); font-size: 1.1rem;
+}
+
+/* ===== DYNAMIC STORY SECTION (Added this missing CSS) ===== */
+.dynamic-story {
+  padding: 4rem 5%;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.story-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split 50/50 */
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Side: Navigation Items */
+.story-nav { display: flex; flex-direction: column; gap: 20px; }
+
+.story-item {
+  padding: 20px 25px;
+  border-left: 3px solid #eee; /* Default border */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.6; /* Dimmed by default */
+}
+
+/* Active State Design */
+.story-item.active {
+  border-left: 3px solid var(--primary); /* Orange Border */
+  background: #fffbf2; /* Light Orange BG */
+  opacity: 1; /* Full visibility */
+  border-radius: 0 10px 10px 0;
+}
+
+.story-item h3 { font-size: 1.4rem; margin-bottom: 8px; color: var(--text-dark); }
+
+.story-item p {
+  font-size: 0.95rem; color: #666; margin: 0;
+  display: none; /* Hide text by default */
+}
+
+.story-item.active p {
+  display: block; /* Show text only when active */
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Right Side: Image Box */
+.story-visual {
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 20px 20px 0px rgba(255, 153, 51, 0.15); /* Orange Shadow Block */
+  position: relative;
+}
+
+.story-visual img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* ===== STATS BAR ===== */
+.stats-container {
+  background: white;
+  padding: 3rem 1rem;
+  margin: 3rem 0;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.03);
+}
+
+.stats-grid {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center;
+}
+
+.stat-item h3 { font-size: 2.5rem; color: var(--primary); margin-bottom: 5px; }
+.stat-item p { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ===== FOUNDER CARD ===== */
+.founder-section { text-align: center; padding: 4rem 1rem; }
+
+.founder-card {
+  background: white; max-width: 600px; margin: 0 auto;
+  padding: 3rem; border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08); position: relative; overflow: hidden;
+}
+
+.founder-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: var(--primary);
+}
+
+.founder-img {
+  width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+  border: 4px solid var(--primary-light); margin-bottom: 1.5rem;
+}
+
+.founder-card h3 { font-size: 1.5rem; margin-bottom: 5px; }
+.founder-card span { display: block; color: var(--primary); font-weight: 600; margin-bottom: 1rem; }
+.founder-card p { font-size: 0.95rem; color: var(--text-grey); font-style: italic; }
+
+/* ===== CALL TO ACTION ===== */
+.cta-box {
+  background: var(--text-dark); color: white;
+  text-align: center; padding: 3rem 1rem; margin: 4rem 5%; border-radius: 20px;
+}
+.cta-box h2 { font-size: 1.8rem; margin-bottom: 10px; color: white; }
+.cta-box p { opacity: 0.8; margin-bottom: 2rem; }
+.btn-white {
+  background: white; color: var(--text-dark); padding: 12px 30px; border-radius: 50px;
+  text-decoration: none; font-weight: 600; transition: 0.3s;
+}
+.btn-white:hover { background: var(--primary); color: white; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .story-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+  .story-visual { height: 250px; order: -1; }
+  .stats-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .about-hero h1 { font-size: 2.2rem; }
+}
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="brand">Vihara</a>
+    <a href="index.html" class="back-home" onclick="if(history.length>1){history.back();return false;}">Back</a>
+  </header>
+
+  <section class="about-hero">
+    <span class="pill">Our Mission</span>
+    <h1>Digitizing The Divine City</h1>
+    <p>Vihara is a community-led initiative to connect tourists with the authentic local businesses of Shravanabelagola.</p>
+  </section>
+
+  <section class="dynamic-story">
+    <div class="story-wrapper">
+      
+      <div class="story-nav">
+        
+        <div class="story-item active" onclick="changeSlide(0)">
+          <h3>The Vision</h3>
+          <p>It starts with Shravanabelagola, but the dream is bigger. Our mission is to put every small town, hidden village, and local artisan of India on the digital map.</p>
+        </div>
+
+        <div class="story-item" onclick="changeSlide(1)">
+          <h3>The Gap</h3>
+          <p>India's true essence lives in its towns. Yet, authentic shops and historic spots remain invisible to the internet. We are building the bridge to connect them.</p>
+        </div>
+
+        <div class="story-item" onclick="changeSlide(2)">
+          <h3>Empowering Locals</h3>
+          <p>Technology shouldn't just be for big cities. We give a digital identity to the small merchant, the mess owner, and the farmer, helping them thrive in a modern world.</p>
+        </div>
+
+      </div>
+
+      <div class="story-visual">
+        <img id="dynamicImg" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Rural India">
+      </div>
+
+    </div>
+  </section>
+
+  <div class="stats-container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>Verified Shops</p>
+      </div>
+  
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Free for Locals</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="founder-section">
+    <div class="founder-card">
+      <img src="vikas.jpeg" class="founder-img" alt="Founder">
+      <h3>Vikas G M</h3>
+      <span>Founder & Lead Developer</span>
+      <p>"I believe technology shouldn't just be for big cities. Vihara is my attempt to bring the power of the internet to the hardworking merchants of my hometown."</p>
+      
+      <div style="margin-top: 20px;">
+        <a href="#" style="color:#333; margin:0 10px;"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" style="color:#333; margin:0 10px;"><i class="fab fa-github fa-lg"></i></a>
+        <a href="#" style="color:#333; margin:0 10px;"><i class="fas fa-envelope fa-lg"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-box">
+    <h2>Own a Shop in Shravanabelagola?</h2>
+    <p>Join the digital revolution. Listing your business on Vihara is completely free.</p>
+    <a href="add_button.html" class="btn-white">List My Shop</a>
+  </div>
+
+  <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.9rem;">
+    <p>© 2025 Vihara | Made with ❤️ in Karnataka</p>
+  </footer>
+
+  <script>
+    // UPDATED: Local Image Paths
+  const slides = [
+    "images/story/s1.png",   // Image 1
+    "images/story/s2.png",      // Image 2
+    "images/story/s3.png"   // Image 3
+  ];
+
+    let currentIndex = 0;
+    const imgElement = document.getElementById('dynamicImg');
+    const items = document.querySelectorAll('.story-item');
+    let autoPlayInterval;
+
+    function changeSlide(index) {
+      currentIndex = index;
+      
+      // Fade Out Image
+      imgElement.style.opacity = 0; 
+      
+      setTimeout(() => {
+        imgElement.src = slides[index];
+        imgElement.style.opacity = 1; // Fade In
+      }, 200);
+
+      // Update Text Highlight
+      items.forEach(item => item.classList.remove('active'));
+      items[index].classList.add('active');
+
+      resetTimer();
+    }
+
+    function autoPlay() {
+      currentIndex++;
+      if (currentIndex >= slides.length) currentIndex = 0;
+      changeSlide(currentIndex);
+    }
+
+    function resetTimer() {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(autoPlay, 4000); 
+    }
+
+    // Initialize Auto Play
+    resetTimer();
+  </script>
+
+</body>
+</html>
