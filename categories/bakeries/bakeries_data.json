@@ -1,7 +1,7 @@
 [
   {
     "id": "bake1",
-    "name": "sri_ganapathi_bakery.jpg",
+    "name": "Sri Ganapathi Bakery",
     "type": "Traditional Bakery",
     "image": "images/explorica/bakery/sri_ganapathi_bakery.jpg",
     "location": "Bangalore Road, Maruthi Circle",
@@ -13,7 +13,7 @@
     "bestseller": "Honey Cake & Khara Bun",
     "description": "The aroma of fresh bread hits you from the street. Famous for our wood-fired oven puffs.",
     "menu_image": "images/explorica/bakery/sri_ganapathi_bakery.jpg"
-  },
+  }
   {
     "id": "bake2",
     "name": "Cream & Crumbs",
