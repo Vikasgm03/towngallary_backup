@@ -1,18 +1,18 @@
 [
   {
     "id": "bake1",
-    "name": "Iyengar's Oven Fresh",
+    "name": "sri_ganapathi_bakery.jpg",
     "type": "Traditional Bakery",
-    "image": "../../images/bakeries/bread.jpg",
-    "location": "Temple Road, Main Circle",
+    "image": "images/explorica/bakery/sri_ganapathi_bakery.jpg",
+    "location": "Bangalore Road, Maruthi Circle",
     "phone": "+919876543210", 
-    "map_link": "https://goo.gl/maps/exampleLink1",
+    "map_link": "https://maps.app.goo.gl/8Uw3A5EYzMJ66N8S8",
     "status": "Fresh Stock",
     "statusColor": "#27ae60",
     "timings": "7:00 AM - 9:30 PM",
     "bestseller": "Honey Cake & Khara Bun",
     "description": "The aroma of fresh bread hits you from the street. Famous for our wood-fired oven puffs.",
-    "menu_image": "../../images/menus/iyengar_menu.jpg"
+    "menu_image": "images/explorica/bakery/sri_ganapathi_bakery.jpg"
   },
   {
     "id": "bake2",
